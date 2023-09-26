@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <meta name="description" content="">
+  <meta title="">
+  <meta keyword="">
+  <link rel="stylesheet" href="css/style2.css">
+  <title>Landing Page</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="#Home">
+      <img src="/image/logo.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon">
+        <i class="fa-solid fa-bars"></i>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#promise">Our Promise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#client">Client</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- banner -->
+  <section class="banner" id="Home">
+    <div class="container">
+      <div class="row ban__row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="ban__content">
+            <h1 class="ban__title">
+              Unlock the Power of Online Jewellery Business
+            </h1>
+            <h3 class="ban__para">#EmpoweringRetailJewellers</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="form-wrap">
+            <form id="survey-form" method="post" onsubmit="return validateForm()">
+              <div class="form__title">
+                <h1>Let’s Get Started</h1>
+              </div>
+              <div id="res" style="color:green;font-size:20px;"></div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" class="form-control"
+                      required>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" name="company" id="company" placeholder="Enter Your Company Name"
+                      class="form-control" required>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <!-- <input type="number" name="phone" id="phone" placeholder="Phone Number" class="form-control"
+                      required> -->
+
+                    <input type="text" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Phone Number"
+                      class="form-control" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="form-group">
+                      <input type="email" name="email" id="email" placeholder="Enter Your Email" class="form-control"
+                        required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" name="city" id="city" placeholder="Enter Your City" class="form-control"
+                      required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <h6 class="form-radio-title">Are You A Jeweller?</h6>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                      value="yes" checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                      value="no">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <input type="date" name="date" id="date" style="display:none;">
+              <div class="row">
+                <div class="col-md-4">
+                  <button type="submit" id="submit" name="btn" class="btns btn-primary btn-block">Submit</button>
+
+                  <span id="success"></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strength -->
+  <section class="strength" id="promise">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 slideLeft">
+          <div class="strength__box">
+            <h3 class="strength__title">7000+</h3>
+            <p class="strength__para">Connected To Jewellers<br>Globally</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-12 slideLeft">
+          <div class="strength__box">
+            <h3 class="strength__title">150+</h3>
+            <p class="strength__para">Serving Jewellers<br> Worldwide</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-12 slideRight">
+          <div class="strength__box">
+            <h3 class="strength__title">40 Yrs</h3>
+            <p class="strength__para">Legacy of In Jewellers<br> Industry</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-12 slideRight">
+          <div class="strength__box">
+            <h3 class="strength__title">360°</h3>
+            <p class="strength__para">Website Digital<br> Solutions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- business model -->
+  <section class="business_model" id="pricing">
+    <h1 class="business__header__title">Business Module</h1>
+    <div class="tab-slider--nav">
+      <ul class="tab-slider--tabs">
+        <li id="checkTab1" class="tab-slider--trigger active" rel="tab1">B2B</li>
+        <li id="checkTab2" class="tab-slider--trigger" rel="tab2">B2C</li>
+      </ul>
+    </div>
+
+    <div class="tab-slider--container">
+      <div id="tab1" class="tab-slider--body">
+        <div class="cards" id="b2b">
+          <div class="card shadow">
+            <ul class="cards__list">
+              <li class="pack price bottom-bar">Lite</li>
+              <li class="bottom-bar">Currency - INR</li>
+              <li class="bottom-bar">Upload 1000 Products</li>
+              <li class="bottom-bar">10 Lakh Subscription Waiver</li>
+              <li><a href="#cta-form-section" class="btn">Learn More</a></li>
+            </ul>
+          </div>
+          <div class="card active">
+            <ul class="cards__list">
+              <li class="pack price bottom-bar">Lite Plus</li>
+              <li class="bottom-bar">Currency - INR + 1</li>
+              <li class="bottom-bar">Upload 1500 Products</li>
+              <li class="bottom-bar">15 Lakh Subscription Waiver</li>
+              <li><a href="#cta-form-section" class="btn active-btn">Learn More</a></li>
+            </ul>
+          </div>
+          <div class="card shadow">
+            <ul class="cards__list">
+              <li class="pack price bottom-bar">Premium Plan</li>
+              <li class="bottom-bar">Currency - INR + 2</li>
+              <li class="bottom-bar">Upload 2500 Products</li>
+              <li class="bottom-bar">20 Lakh Subscription Waiver</li>
+              <li><a href="#cta-form-section" class="btn ">Learn More</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab2" class="tab-slider--body">
+        <div class="cards" id="b2c">
+          <div class="card shadow">
+            <ul class="cards__list">
+              <li class="pack price bottom-bar">Basic Plan</li>
+              <li class="bottom-bar">Currency - INR</li>
+              <li class="bottom-bar">Admin Users Allowed</li>
+              <li class="bottom-bar">Upload 750 Products</li>
+              <li><a href="#cta-form-section" class="btn">Learn More</a></li>
+            </ul>
+          </div>
+          <div class="card active">
+            <ul class="cards__list">
+              <li class="pack price bottom-bar">Gold Plan</li>
+              <li class="bottom-bar">1 Currency (as per choice)</li>
+              <li class="bottom-bar">Admin + 1 User Role</li>
+              <li class="bottom-bar">Upload 1300 Products</li>
+              <li><a href="#cta-form-section" class="btn active-btn">Learn More</a></li>
+            </ul>
+          </div>
+          <div class="card shadow">
+            <ul class="cards__list">
+              <li class="pack price bottom-bar">Silver Plan</li>
+              <li class="bottom-bar">2 Currency (as per choice)</li>
+              <li class="bottom-bar">Admin + 2 User Role</li>
+              <li class="bottom-bar">Upload 2500 Products</li>
+              <li><a href="#cta-form-section" class="btn">Learn More</a></li>
+            </ul>
+          </div>
+          <div class="card shadow">
+            <ul class="cards__list">
+              <li class="pack price bottom-bar">Platinum Plan</li>
+              <li class="bottom-bar">3 Currency (as per choice)</li>
+              <li class="bottom-bar">Admin + 3 User Role</li>
+              <li class="bottom-bar">Upload 4000 Products</li>
+              <li><a href="#cta-form-section" class="btn">Learn More</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn_business"><a href="#cta-form-section">More Plans</a></button>
+  </section>
+
+  <!-- CTA Form -->
+  <section class="cta-form" id="cta-form-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="cta__content">
+            <h1 class="cta__text">Get a Quote</h1>
+            <p class="cta__para">You are just one step away from starting your online jewellery business. Join
+              Jewellerskart today and be the part of revolution. Helps us with few thigs to start your on online
+              jewellery business.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-wrap">
+            <form id="survey-form-new" method="post">
+              <div class="form__title">
+                <h1>Let’s Get Started</h1>
+              </div>
+              <div id="resnew" style="color:green;font-size:20px;"></div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" class="form-control"
+                      required>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" name="company" id="company" placeholder="Enter Your Company Name"
+                      class="form-control" required>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <!-- <input type="number" name="phone" id="phone" placeholder="Phone Number" class="form-control"
+                      required> -->
+
+                    <input type="text" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Phone Number"
+                      class="form-control" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="form-group">
+                      <input type="email" name="email" id="email" placeholder="Enter Your Email" class="form-control"
+                        required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" name="city" id="city" placeholder="Enter Your City" class="form-control"
+                      required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <h6 class="form-radio-title">Are You A Jeweller?</h6>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                      value="yes" checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                      value="no">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <input type="date" name="date" id="date2" style="display:none;">
+              <div class="row">
+                <div class="col-md-4">
+                  <button type="submit" id="submit" name="btn" class="btns btn-primary btn-block">Submit</button>
+
+                  <span id="success"></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- associates -->
+  <section class="associates">
+    <div class="container">
+      <div class="associates__title">
+        <h2>We Are Associated With</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="associates__img">
+            <img src="/image/gjc.jpeg" alt="Gems and jewellery council">
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="associates__img">
+            <img src="/image/gjpc.jpg" alt="The Gem and Jewellery Export Promotion Council">
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="associates__img">
+            <img src="/image/sjma.jpeg" alt="Surat Jewellery Manufracture Associates">
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="associates__img">
+            <img src="/image/madeindia.jpeg" alt="Made In India">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Carousla -->
+  <section class="customer" id="client">
+    <div class="container">
+      <div class="customer__title">
+        <h2>Our Esteemed Clients</h2>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide"><img src="/image/client1.jpg" alt=""></div>
+        <div class="slide"><img src="/image/client2.jpg" alt=""></div>
+        <div class="slide"><img src="/image/client3.jpg" alt=""></div>
+        <div class="slide"><img src="/image/client4.jpg" alt=""></div>
+        <div class="slide"><img src="/image/client5.jpg" alt=""></div>
+        <div class="slide"><img src="/image/client6.jpg" alt=""></div>
+        <div class="slide"><img src="/image/client7.jpg" alt=""></div>
+        <div class="slide"><img src="/image/client8.jpg" alt=""></div>
+        <div class="slide"><img src="/image/client9.jpg" alt=""></div>
+        <div class="slide"><img src="/image/client10.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-column">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <span class="footer-title">Useful Links</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Plans & Prices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta-form">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-column">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <span class="footer-title">Company</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.jewellerskart.com/about-us/">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Job postings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News and articles</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-column">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <span class="footer-title">Contact & Support</span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link"><i class="fas fa-phone"></i> +91 9819082345 / 9920300088</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact us : online@jewellerskart.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-12 box">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/jewellerskart" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/jewellerskart" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company/jewellerskartcom/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/jewellerskart_com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com/channel/UC-sa2LFG7q4rBIoLMRM9bRw" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <span class="copyright quick-links">Copyright &copy; <a href="https://www.jewellerskart.com">Jewellerskart.com
+              2023</a></span>
+        </div>
+      </div>
+
+
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    document.getElementById('survey-form').addEventListener('submit', function () {
+      let today = new Date();
+      let dateField = document.getElementById('date');
+      dateField.value = today.toISOString().split('T')[0]; // Set today's date in YYYY-MM-DD format
+    });
+
+    document.getElementById('survey-form-new').addEventListener('submit', function () {
+      let today = new Date();
+      let dateField = document.getElementById('date2');
+      dateField.value = today.toISOString().split('T')[0]; // Set today's date in YYYY-MM-DD format
+    });
+  </script>
+
+  <script>
+    let url = 'https://script.google.com/macros/s/AKfycbybaMqRSbhxrZBdc305m4GvQlWUCvZQ6fLB5GGTnRI98PZ-nHjryg-Xfbvm8UshEYiPRQ/exec';
+    let form = document.querySelector('#survey-form');
+    form.addEventListener("submit", (e) => {
+      e.target.btn.innerHTML = "Submitting....";
+      let formData = new FormData(form);
+      fetch(url,
+        {
+          method: 'POST',
+          body: formData
+        }).then((res) => res.text())
+        .then((finalRes) => {
+          e.target.btn.innerHTML = "Submit";
+          document.getElementById("res").innerHTML = finalRes;
+          form.reset();
+          setTimeout(() => {
+            document.getElementById("res").innerHTML = '';
+          }, 5000)
+
+        })
+      e.preventDefault();
+
+    })
+  </script>
+
+  <script>
+    let urlnew = 'https://script.google.com/macros/s/AKfycbybaMqRSbhxrZBdc305m4GvQlWUCvZQ6fLB5GGTnRI98PZ-nHjryg-Xfbvm8UshEYiPRQ/exec';
+    let formnew = document.querySelector('#survey-form-new');
+    formnew.addEventListener("submit", (e) => {
+      e.target.btn.innerHTML = "Submitting....";
+      let formData = new FormData(formnew);
+      fetch(urlnew,
+        {
+          method: 'POST',
+          body: formData
+        }).then((resnew) => resnew.text())
+        .then((finalRes) => {
+          e.target.btn.innerHTML = "Submit";
+          document.getElementById("resnew").innerHTML = finalRes;
+          formnew.reset();
+          setTimeout(() => {
+            document.getElementById("resnew").innerHTML = '';
+          }, 5000)
+
+        })
+      e.preventDefault();
+
+    })
+  </script>
+
+</body>
+
+</html>

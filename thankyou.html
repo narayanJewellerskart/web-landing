@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family:'Poppins', sans-serif;
+            background-image: url(/image/thank-bg-3.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1000px;
+            padding: 0 40px 40px;
+            text-align: center;
+            animation: pop-scale 0.5s ease-in-out 0.2s;
+
+        }
+
+        .shadow-box {
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 80px 90px;
+            background-color: white;
+        }
+
+        .thank__title {
+            font-size: 36px;
+            font-weight: bold;
+            background: #BA3133;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .thank__h2 {
+            font-size: 70px;
+            text-align: center;
+            animation: pop-scale 0.5s ease-in-out;
+        }
+
+        .thank__p {
+            color: black;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 20px;
+            animation: pop-scale 0.5s ease-in-out 0.2s;
+        }
+
+        .thank__title i{
+            font-size: 70px;
+            padding-bottom: 20px;
+        }
+
+        .website__btn {
+            padding: 15px 35px;
+            border-radius: 10px;
+            border: 1px solid black;
+            background: #074EB9;
+        }
+
+        .website__btn a{
+            color: white;
+        }
+
+        .social__links{
+            text-align: center;
+            animation: pop-scale 0.5s ease-in-out 0.2s;
+            
+        }
+
+        .social__title{
+                padding-bottom: 20px;
+        }
+
+        .fab {
+            padding: 12px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
+        .fa-facebook-f{
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .fa-linkedin-in {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube{
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-twitter{
+            background: #55ACEE;
+            color: white;
+        }
+
+        .social-links{
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-links i {
+            font-size: 24px;
+        }
+
+        .social-links a:hover {
+            color: #1877f2;
+        }
+
+        .home__btn{
+            padding-top: 40px;
+            animation: pop-scale 0.5s ease-in-out 0.2s;
+        }
+
+        @keyframes pop-scale {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="thankyou">
+        <div class="container">
+            <div class="thank__title">
+                <i class="fa-regular fa-circle-check" style="color: #074EB9;"></i>
+                <h2 class="thank__h2">Thank You !!</h2>
+                <p class="thank__p">You can find more information on our website and social pages</p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="social__links shadow-box">
+                        <h2 class="social__title">Connect With Us</h2>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/jewellerskart" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/jewellerskartcom/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/jewellerskart_com/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC-sa2LFG7q4rBIoLMRM9bRw" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://twitter.com/jewellerskart" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="social__links shadow-box">
+                        <h2 class="social__title">Visit Our Website</h2>
+                        <button class="website__btn">
+                            <a href="https://www.jewellerskart.com/" target="_blank">Visit Website</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home__btn">
+                <div class="social__links">
+                    <button class="website__btn">
+                        <a href="http://127.0.0.1:5500/index2.html">Return Home</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
